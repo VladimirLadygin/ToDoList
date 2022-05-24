@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E766C53B2836701200AD4DFD /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E766C53A2836701200AD4DFD /* TextFieldCell.swift */; };
+		E766C53D2836754100AD4DFD /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E766C53C2836754100AD4DFD /* SwitchCell.swift */; };
+		E766C53F2836762700AD4DFD /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E766C53E2836762700AD4DFD /* DateCell.swift */; };
+		E766C5412836767A00AD4DFD /* DatePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E766C5402836767A00AD4DFD /* DatePickerCell.swift */; };
+		E766C543283676DD00AD4DFD /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E766C542283676DD00AD4DFD /* ImageCell.swift */; };
 		E7A3EE1628327FE70089886E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A3EE1528327FE70089886E /* AppDelegate.swift */; };
 		E7A3EE1828327FE70089886E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A3EE1728327FE70089886E /* SceneDelegate.swift */; };
 		E7A3EE1A28327FE70089886E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A3EE1928327FE70089886E /* ViewController.swift */; };
@@ -17,9 +22,20 @@
 		E7A3EE32283285FC0089886E /* ToDoItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A3EE31283285FC0089886E /* ToDoItemTableViewController.swift */; };
 		E7A3EE35283298350089886E /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A3EE34283298350089886E /* ToDoCell.swift */; };
 		E7A3EE3728329AD20089886E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7A3EE3628329AD20089886E /* Assets.xcassets */; };
+		E7A3EE3A2832D11A0089886E /* StringOfExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A3EE392832D11A0089886E /* StringOfExtention.swift */; };
+		E7A3EE3C2832D5E70089886E /* Date+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A3EE3B2832D5E70089886E /* Date+Extention.swift */; };
+		E7A577EB2839537E0056A9BD /* SectionDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A577EA2839537E0056A9BD /* SectionDatePicker.swift */; };
+		E7A577ED283954A00056A9BD /* SectionImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A577EC283954A00056A9BD /* SectionImagePickerController.swift */; };
+		E7A577EF283955440056A9BD /* SectionSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A577EE283955440056A9BD /* SectionSwitch.swift */; };
+		E7A577F1283955FC0056A9BD /* SectionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A577F0283955FC0056A9BD /* SectionTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E766C53A2836701200AD4DFD /* TextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
+		E766C53C2836754100AD4DFD /* SwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
+		E766C53E2836762700AD4DFD /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		E766C5402836767A00AD4DFD /* DatePickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerCell.swift; sourceTree = "<group>"; };
+		E766C542283676DD00AD4DFD /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		E7A3EE1228327FE70089886E /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A3EE1528327FE70089886E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7A3EE1728327FE70089886E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +48,13 @@
 		E7A3EE31283285FC0089886E /* ToDoItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemTableViewController.swift; sourceTree = "<group>"; };
 		E7A3EE34283298350089886E /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
 		E7A3EE3628329AD20089886E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7A3EE392832D11A0089886E /* StringOfExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringOfExtention.swift; sourceTree = "<group>"; };
+		E7A3EE3B2832D5E70089886E /* Date+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extention.swift"; sourceTree = "<group>"; };
+		E7A577EA2839537E0056A9BD /* SectionDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDatePicker.swift; sourceTree = "<group>"; };
+		E7A577EC283954A00056A9BD /* SectionImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionImagePickerController.swift; sourceTree = "<group>"; };
+		E7A577EE283955440056A9BD /* SectionSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionSwitch.swift; sourceTree = "<group>"; };
+		E7A577F0283955FC0056A9BD /* SectionTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTextField.swift; sourceTree = "<group>"; };
+		E7DFB711283D189B003B0577 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +71,7 @@
 		E7A3EE0928327FE70089886E = {
 			isa = PBXGroup;
 			children = (
+				E7DFB711283D189B003B0577 /* README.md */,
 				E7A3EE1428327FE70089886E /* ToDoList */,
 				E7A3EE1328327FE70089886E /* Products */,
 			);
@@ -64,11 +88,13 @@
 		E7A3EE1428327FE70089886E /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
-				E7A3EE33283297F00089886E /* Cells */,
-				E7A3EE2D283283C20089886E /* Storyboards */,
 				E7A3EE2C2832839D0089886E /* App */,
+				E7A3EE33283297F00089886E /* Cells */,
+				E7A3EE382832D0A90089886E /* Extentions */,
 				E7A3EE292832800B0089886E /* Models */,
 				E7A3EE1728327FE70089886E /* SceneDelegate.swift */,
+				E7A3EE2D283283C20089886E /* Storyboards */,
+				E7A577E9283952BC0056A9BD /* View */,
 				E7A3EE2E283284120089886E /* ViewControllers */,
 			);
 			path = ToDoList;
@@ -114,9 +140,34 @@
 		E7A3EE33283297F00089886E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				E766C53E2836762700AD4DFD /* DateCell.swift */,
+				E766C5402836767A00AD4DFD /* DatePickerCell.swift */,
+				E766C542283676DD00AD4DFD /* ImageCell.swift */,
+				E766C53C2836754100AD4DFD /* SwitchCell.swift */,
+				E766C53A2836701200AD4DFD /* TextFieldCell.swift */,
 				E7A3EE34283298350089886E /* ToDoCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		E7A3EE382832D0A90089886E /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				E7A3EE392832D11A0089886E /* StringOfExtention.swift */,
+				E7A3EE3B2832D5E70089886E /* Date+Extention.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		E7A577E9283952BC0056A9BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7A577EA2839537E0056A9BD /* SectionDatePicker.swift */,
+				E7A577EC283954A00056A9BD /* SectionImagePickerController.swift */,
+				E7A577EE283955440056A9BD /* SectionSwitch.swift */,
+				E7A577F0283955FC0056A9BD /* SectionTextField.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,13 +241,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7A577EF283955440056A9BD /* SectionSwitch.swift in Sources */,
 				E7A3EE1A28327FE70089886E /* ViewController.swift in Sources */,
 				E7A3EE1628327FE70089886E /* AppDelegate.swift in Sources */,
 				E7A3EE35283298350089886E /* ToDoCell.swift in Sources */,
 				E7A3EE1828327FE70089886E /* SceneDelegate.swift in Sources */,
+				E7A3EE3A2832D11A0089886E /* StringOfExtention.swift in Sources */,
+				E7A577EB2839537E0056A9BD /* SectionDatePicker.swift in Sources */,
+				E766C543283676DD00AD4DFD /* ImageCell.swift in Sources */,
 				E7A3EE2B2832802A0089886E /* ToDo.swift in Sources */,
+				E766C5412836767A00AD4DFD /* DatePickerCell.swift in Sources */,
 				E7A3EE32283285FC0089886E /* ToDoItemTableViewController.swift in Sources */,
+				E766C53F2836762700AD4DFD /* DateCell.swift in Sources */,
+				E7A3EE3C2832D5E70089886E /* Date+Extention.swift in Sources */,
 				E7A3EE30283285DB0089886E /* ToDoTableViewController.swift in Sources */,
+				E766C53D2836754100AD4DFD /* SwitchCell.swift in Sources */,
+				E7A577F1283955FC0056A9BD /* SectionTextField.swift in Sources */,
+				E766C53B2836701200AD4DFD /* TextFieldCell.swift in Sources */,
+				E7A577ED283954A00056A9BD /* SectionImagePickerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
