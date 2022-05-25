@@ -8,8 +8,6 @@ Added basic ToDo application and additional features:
 - designed in a horizontal stack, 
 - when you click on the date appears and disappears date picker.
 
-|![screen1](https://github.com/VladimirLadygin/ToDoList/blob/main/ToDoList/Screeenshots/Screen00001.PNG) 
-|![screen1](https://github.com/VladimirLadygin/ToDoList/blob/main/ToDoList/Screeenshots/Screen00002.PNG)|
+|![screen1](https://github.com/VladimirLadygin/ToDoList/blob/main/ToDoList/Screeenshots/Screen00001.PNG) |![screen1](https://github.com/VladimirLadygin/ToDoList/blob/main/ToDoList/Screeenshots/Screen00002.PNG)|
+|![screen1](https://github.com/VladimirLadygin/ToDoList/blob/main/ToDoList/Screeenshots/Screen00003.PNG) |![screen1](https://github.com/VladimirLadygin/ToDoList/blob/main/ToDoList/Screeenshots/Screen00004.PNG)|
 |----|----|   
-|![screen1](https://github.com/VladimirLadygin/ToDoList/blob/main/ToDoList/Screeenshots/Screen00003.PNG) 
-|![screen1](https://github.com/VladimirLadygin/ToDoList/blob/main/ToDoList/Screeenshots/Screen00004.PNG)|
