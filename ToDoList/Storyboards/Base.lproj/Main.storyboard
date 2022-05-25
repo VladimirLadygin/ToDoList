@@ -43,7 +43,13 @@
                             <outlet property="delegate" destination="FG1-Bq-N3s" id="7jV-Yl-Dbh"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="To Do List" id="oRi-P5-vtU"/>
+                    <navigationItem key="navigationItem" title="To Do List" id="oRi-P5-vtU">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="AnR-J6-UEZ">
+                            <connections>
+                                <segue destination="Nf2-uN-piS" kind="show" id="ePQ-IZ-EBj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gc8-R1-Phm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -202,7 +208,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OwI-5i-lx4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="SmX-vS-rAx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1395.6521739130435" y="75.669642857142847"/>
+            <point key="canvasLocation" x="1370" y="76"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5IQ-tc-XA3">
@@ -221,4 +227,7 @@
             <point key="canvasLocation" x="-364" y="76"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ePQ-IZ-EBj"/>
+    </inferredMetricsTieBreakers>
 </document>
