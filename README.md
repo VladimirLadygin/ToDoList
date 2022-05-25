@@ -12,4 +12,4 @@ Added basic ToDo application and additional features:
 | ![screen1](https://github.com/VladimirLadygin/ToDoList/blob/main/ToDoList/Screeenshots/Screen00002.PNG) |
 | ![screen1](https://github.com/VladimirLadygin/ToDoList/blob/main/ToDoList/Screeenshots/Screen00003.PNG) 
 | ![screen1](https://github.com/VladimirLadygin/ToDoList/blob/main/ToDoList/Screeenshots/Screen00004.PNG) |
-|___ | ___|   
+|----|----|   
