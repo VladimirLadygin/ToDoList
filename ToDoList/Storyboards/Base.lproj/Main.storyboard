@@ -46,7 +46,7 @@
                     <navigationItem key="navigationItem" title="To Do List" id="oRi-P5-vtU">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="AnR-J6-UEZ">
                             <connections>
-                                <segue destination="Nf2-uN-piS" kind="show" id="ePQ-IZ-EBj"/>
+                                <segue destination="Nf2-uN-piS" kind="show" identifier="NewToDoItemSegue" id="ePQ-IZ-EBj"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

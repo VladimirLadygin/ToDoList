@@ -65,15 +65,12 @@ extension ToDoItemTableViewController/*: UITableViewDelegate*/ {
         
         if value is Date {
             
-            // TODO: Impliment show/hide date piker
             guard let _ = tableView.dequeueReusableCell(withIdentifier: "DateCell") as? DateCell else { return }
             
             isDatePickerCellShown.toggle()
             
             UIView.transition(with: tableView, duration: 0.3, options: .transitionCrossDissolve, animations: {tableView.reloadData()}, completion: nil)
             
-            
-            // TODO: Implement show/hide image picker
         } else if value is UIImage {
             
             let alert = UIAlertController(title: "Choose Sourse", message: nil, preferredStyle: .actionSheet)

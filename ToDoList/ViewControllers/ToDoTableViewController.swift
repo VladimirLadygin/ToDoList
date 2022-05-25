@@ -53,7 +53,7 @@ class ToDoTableViewController: UITableViewController {
                 let label = UILabel()
                 label.text = stringValue
                 if key == "Notes" {
-                stackView.addArrangedSubview(label)
+                    stackView.addArrangedSubview(label)
                 } else {
                     horisontalStack.addArrangedSubview(label)
                 }
@@ -84,7 +84,7 @@ class ToDoTableViewController: UITableViewController {
                     self.todos[indexPath.section].isComplete.toggle()
                     imageValue = self.todos[indexPath.section].isComplete ? isChecked.image : isUnchecked.image
                     button.setImage(imageValue, for: .normal)
-                     
+                    
                 } ), for: .touchUpInside)
                 // Add button on first place in horisontal stack
                 horisontalStack.insertArrangedSubview(button, at: 0)
@@ -118,33 +118,46 @@ class ToDoTableViewController: UITableViewController {
     }
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.identifier == "ToDoItemSegue" else { return }
-        guard let selectedIndex = tableView.indexPathForSelectedRow else { return }
         
-        let destination = segue.destination as! ToDoItemTableViewController
-        destination.todo = todos[selectedIndex.section].copy() as! ToDo
+        if segue.identifier == "NewToDoItemSegue" {
+            
+            let destination = segue.destination as! ToDoItemTableViewController
+            destination.todo = ToDo(image: UIImage(named: "placeholder"))
+        } else if segue.identifier == "ToDoItemSegue" {
+            
+            guard let selectedIndex = tableView.indexPathForSelectedRow else { return }
+            let destination = segue.destination as! ToDoItemTableViewController
+            destination.todo = todos[selectedIndex.section].copy() as! ToDo
+        }
     }
-    
-    
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
         guard segue.identifier == "SaveSegue" else { return }
-        guard let selectedIndex = tableView.indexPathForSelectedRow else { return }
         let source = segue.source as! ToDoItemTableViewController
+//        guard let selectedIndex = tableView.indexPathForSelectedRow else { return }
+
+//        todos[selectedIndex.section] = source.todo
+//
+//        if let toDoCell = tableView.cellForRow(at: selectedIndex) as? ToDoCell {
+//            if let stackView = toDoCell.stackView {
+//                stackView.arrangedSubviews.forEach { subview in
+//                    stackView.removeArrangedSubview(subview)
+//                    subview.removeFromSuperview()
+//                }
+//            }
+//            tableView.reloadRows(at: [selectedIndex], with: .automatic)
+//        } else {
+//            todos.append(source.todo)
+//            tableView.reloadData()
+//        }
         
-        todos[selectedIndex.section] = source.todo
-        
-        if let toDoCell = tableView.cellForRow(at: selectedIndex) as? ToDoCell {
-            if let stackView = toDoCell.stackView {
-                stackView.arrangedSubviews.forEach { subview in
-                    stackView.removeArrangedSubview(subview)
-                    subview.removeFromSuperview()
-                }
-            }
-            
+        if let selectedIndex = tableView.indexPathForSelectedRow {
+            todos[selectedIndex.section] = source.todo
+            tableView.reloadRows(at: [selectedIndex], with: .automatic)
+        } else {
+            todos.append(source.todo)
+            tableView.reloadData() // Происходит странное, при обновлении таблицы ее содержимое перезагружается с некорректными значениями
         }
-        
-        tableView.reloadRows(at: [selectedIndex], with: .automatic)
     }
     
 }
