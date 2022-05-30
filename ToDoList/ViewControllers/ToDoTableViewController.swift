@@ -38,7 +38,11 @@ class ToDoTableViewController: UITableViewController {
     // MARK: - Cell Content
     func configure(_ cell: ToDoCell, with todo: ToDo, indexPath: IndexPath) {
         guard let stackView = cell.stackView else { return }
-        guard stackView.arrangedSubviews.count == 0 else { return }
+//        guard stackView.arrangedSubviews.count == 0 else { return }
+        stackView.arrangedSubviews.forEach { subview in
+            stackView.removeArrangedSubview(subview)
+            subview.removeFromSuperview()
+        }
         
         stackView.spacing = 0
         let horisontalStack = UIStackView()
